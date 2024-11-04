@@ -51,16 +51,16 @@ const HeaderSection = () => {
           </p>
           <div className="space-x-4 animate-fade-in-delay-2">
             <Link
-              to="/services"
+              to="/about"
               className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300"
             >
-              Service Times
+              Read More
             </Link>
             <Link
-              to="/about"
+              to="/prayerrequest"
               className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300"
             >
-              Learn More
+              Have a prayer request?
             </Link>
           </div>
 

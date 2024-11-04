@@ -8,9 +8,8 @@ function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'PrayerRequest', href: '/prayerrequest' },
+    { name: 'Prayer Request', href: '/prayerrequest' },
     { name: 'Contact', href: '/contact' },
-
   ];
 
   return (
@@ -22,7 +21,7 @@ function Navbar() {
               <span className="text-2xl font-bold text-indigo-600">Riverbank SDA</span>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
             {navigation.map((item) => (
@@ -54,13 +53,13 @@ function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden fixed top-0 left-0 h-full w-1/2 bg-indigo-600 shadow-lg z-10">
+          <div className="flex flex-col items-start px-6 py-4 mt-16 space-y-4">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:text-indigo-200 block w-full text-left px-4 py-3 rounded-md text-lg font-medium transition duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

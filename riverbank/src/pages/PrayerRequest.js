@@ -76,12 +76,12 @@ const PrayerRequest = () => {
 
   return (
     <div style={{ padding: '20px', backgroundColor: '#1a1a1a', borderRadius: '8px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.5)', color: '#f0f0f0' }}>
-      <h1 style={{ fontSize: '2em', marginBottom: '10px', color: '#e0e0e0' }}>Prayer Requests</h1>
+      <h1 style={{ fontSize: '2em', marginBottom: '10px', color: '#e0e0e0' }}>Prayer requests</h1>
       <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}>
         <textarea
           value={request}
           onChange={(e) => setRequest(e.target.value)}
-          placeholder="Enter your prayer request"
+          placeholder="Enter your prayer request here"
           required
           style={{
             width: '100%',
