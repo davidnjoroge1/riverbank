@@ -7,7 +7,6 @@ function Footer() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' },
   ];
 

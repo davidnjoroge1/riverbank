@@ -8,7 +8,6 @@ function Navbar() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Prayer request', href: '/PrayerRequests' },
     { name: 'Contact', href: '/contact' },
   ];
 
