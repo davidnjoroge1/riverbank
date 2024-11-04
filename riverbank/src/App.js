@@ -1,26 +1,27 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import PrayerRequests from './components/ContactSection';
+import HomePage from './pages/Home';
+import AboutPage from './pages/About';
+import ProgramsPage from './pages/Programs';
+import ContactPage from './pages/Contact';
+import PrayerRequest from './pages/PrayerRequest';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/programs" element={<ProgramsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/prayerrequest" element={<PrayerRequest />} />
+      </Routes>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;
